@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <h1 style="color: hotpink;">Cadastro de Usuário</h1>
+
+        <img style="width: 100px; height: auto;" src="oie.jpg">
+
+    <form action="#" method="post"
+        <label style="color: violet;" for="nome">Nome:</label><br>
+        <input type="text" id="nome" placeholder="digite seu nome" name="nome" require><br><br>
+
+        <label style="color:violet" for="senha">Senha:</label><br>
+        <input type="password" id="senha" placeholder="crie uma senha" name="senha" required><br><br>
+
+        <label style="color: violet;" for="confirmar_senha">Confirmar Senha:</label><br>
+        <input type="password" id="confirma_senha" placeholder="confirme sua senha" name="confirma_senha" required><br><br>
+
+        <label style="color: violet;" for="email">📩E-mail</label><br>
+        <input type="email" id="email" placeholder="exemplo@email.com" required><br><br>
+
+        <label style="color: violet;" for="idade">Idade</label><br>
+        <input type="number" id="Idade" name="Idade" min="10" max="1000"><br><br><br>
+
+        <img style="width: 100px;height: auto;" src="marsha.jpg"><br>
+        
+        <label>Interesse:</label><br>
+        <input type="radio" id="site" name="interesse">
+        <label for="site">sim</label><br>
+        <input type="radio" id="site" name="interesse">
+        <label for="site">não</label><br><br>
+
+
+        <label for="servicos">Serviços Desejados:</label><br>
+        <select style="color: crimson;" id="servicos" name="servicos">
+            <option style="color: crimson;" value="portfólio">Portfólio</option>
+            <option style="color: crimson;" value="blog">Blog</option>
+            <option style="color: crimson;" value="institucional">Site Institucional</option>
+        </select><br><br>
+
+        <label for="mensagem">Mensagem</label><br>
+        <textarea name="mensagem" id="mensagem" rows="5" cols="30" 
+            placeholder=" Digite sua mensagem aqui..."></textarea><br><br>
+
+    
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
