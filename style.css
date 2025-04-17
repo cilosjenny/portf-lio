@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    text-shadow:1px 2px 1px #9967EA;
+    background-color:#9967EA99  ;
+    margin: 30px;
+    padding: 55px;
+}
+
+#titulo-principal{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+#coisas {
+    text-align: center;
+    font-size:15px;
+    margin-bottom:15px;
+    color: gainsboro;
+}
+.one {
+    text-align: center;
+}
+.office{
+    width: 300px;
+    height: auto;
+    border-radius: 150px;
+    
+
+}
+
+#about {
+
+
+}
+
+#two{
+
+}
+
+#como
