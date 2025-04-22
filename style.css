@@ -1,41 +1,212 @@
+/*CABEÇALHO*/
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: poppins, sans-serif;
     color: aliceblue;
-    text-shadow:1px 2px 1px #9967EA;
-    background-color:#9967EA99  ;
+    text-shadow: 1px 2px 1px #936E4E;
+    background-color: #7B4719;
     margin: 30px;
     padding: 55px;
+    max-width: 1280px;
+    min-width: 320px;
 }
 
-#titulo-principal{
-    text-align: center;
-    font-size: 3rem;
-    margin-bottom: 20px;
+.interface {
+    margin: 0 auto;
+    position: relative;
 }
-#coisas {
-    text-align: center;
-    font-size:15px;
-    margin-bottom:15px;
-    color: gainsboro;
-}
+
 .one {
     text-align: center;
 }
-.office{
+
+.office {
     width: 300px;
     height: auto;
     border-radius: 150px;
-    
 
+}
+
+.meu-desktop {
+    color: white;
+}
+
+/*ESTILO DO CABEÇALHO*/
+
+header {
+    padding: 20px 2% 2%;
+}
+
+/*para que quando passe o mouse por cima mude*/
+/*pseudo-propriedade hover=cobrir*/
+header a:hover {
+    color: #7B4719;
+    text-decoration: none;
+    /*so funciona em block level*/
+    display: inline-block;
+    transition: 2s;
+}
+
+header nav ul {
+    /*tirou as bolinhas*/
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 30px 5px;
+
+}
+
+/*para n interferir nos outros elementos que nao precisam de display flex*/
+header>.interface {
+    display: flex;
+    align-items: center;
+    /*para ficar o maximo de espaço um do outro*/
+    justify-content: space-between;
+
+}
+
+
+/*MEIO*/
+
+#titulo-principal {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+
+}
+
+.container {
+    display: flex;
+    justify-content: left;
+    gap:20px;
+
+}
+.box {
+    display: inline;
+    background-color:#7d5735;
+    border-radius: 30px;
+    box-shadow: 4px 4px 12px #442f1c;
+    
+}
+
+.linha {
+    display: inline;
+    background-color: #7d5735;
+    border-radius: 30px;
+    box-shadow: 4px 4px 12px #442f1c;
+}
+
+#coisas {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: gainsboro;
+}
+
+.feliz {
+    color: #CF9C6F;
+}
+
+.desconhecido {
+    color: #CF9C6F;
 }
 
 #about {
+    color: #F4EEE38B;
+    opacity: 0.95;
+}
 
+#amo {
+    color: gainsboro;
+    opacity: 0.98;
+}
+
+#lista {
+    color: #F4EEE38B;
+    opacity: 0.95;
+}
+
+.sobre {
+    color: #CF9C6F
+}
+
+#nao {
+    color: gainsboro;
+    opacity: 0.98;
+}
+
+#aja {
+    color: gainsboro;
+    opacity: 0.92;
+}
+
+.marsha {
+    width: 100px;
+    height: auto;
+    border-radius: 100px;
+}
+
+/*FORMULARIO*/
+section.formulario {
+    padding: 80px 4%;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: auto;
+    flex-direction: column;
 
 }
 
-#two{
+form {
+    max-width: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #DFAF8699;
+    border: 0;
+    /*para nao aparecer a borda*/
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 5px;
+    color: gainsboro;
+}
+
+form textarea::placeholder {
+    color: #ccc;
+}
+
+/*mudarba cor de dentro*/
+form input::placeholder {
+    color: #ccc;
+}
+
+form textarea {
+    /*para ele n ser redimensionado, n poder mudar o tamanho*/
+    resize: none;
 
 }
 
-#como
+form .enviar {
+    margin-top: 5px;
+    text-align: center;
+}
+
+/*informaf qual tipo de input especifico em quero*/
+form .enviar input[type="submit"] {
+    width: 100px;
+    background-color: #AD7B6199;
+
+    /*para virar um dedo quando passar por cima*/
+    cursor: pointer;
+}

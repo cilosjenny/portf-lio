@@ -4,54 +4,88 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ANA JENNIFER</title>
 </head>
 
 <body>
   <header>
-    <h1 id="titulo-principal">PORTFÓLIO DE ANA JENNIFER</h1>
-    <h4 id="coisas"> minhas coisas e tals</h4>
-    <div class="one">
-      <img class="office" src="michael.jpg">
+    <div>
+    <h1 id="titulo-principal">ANA JENNIFER</h1>
+     <h6 id="coisas"> minhas coisas e tals</h4>
+     <div class="one">
+      <img class="office" src="michael.jpg" alt="michael">
+      <p>A VIDA É CURTA DEMAIS PARA DESPERDIÇAR TEMPO COM O QUE NÃO NOS FAZ <span class="feliz">FELIZ.</span>
+      <span class="desconhecido"> - desconhecido</span>
+      </p>
+      <!--one-->
+      </div>
+      </p>
     </div>
+    
   </header>
     
   <main>
-    <h2 id="about">Sobre mim</h2>
+    
+      <article>
+       <h2>MINHAS <span class="sobre">ESPECIALIDADES</span></h2><br>
+      </article>
+      <section class="container">
+        <div class="box">
+          <h4>faculdade de rh em andamento </h4>
+          <h4>programação fullstack em andamento</h4>
+          <h4>fiz parte do programa <span id="aja">AJA</span></h4>
+        
+      
+          <h5 id="amo">amo praia, cor verde apagada, música alta, dourado e cheirinho de baunilha</h5>
+        </div>
+        <!--container-->
+      </section>
+
     <section>
-      <h4>faculdade de rh em andamento </h4>
-      <h4>programação fullstack em andamento</h4>
+        <h2 id="lista">Lista de ingredientes para uma vida feliz</h2>
+
+        <h5 id="nao">não aberto a discussões</h5>
+        <div class="linha">
+          <ol type="I">
+           <li> pare de se importar com opniões alheias</li>
+           <ol type="i"> <li> a vida n é feita para ser sobrevivida e sim vivida</li>
+             <li>repare em cada detalhe de cada momento, independente da ocasião</li>
+             <li>se ame</li>
+
+          </ol>
+            </li>
+            <li> seja feliz</li>
+           <li>e faça atividades físicas</li>
+
+          </ol>
+          <!--linha-->
+        </div>
     </section>
 
-    <section>
-      <div class="lista">
-        <h2>🧿Lista de ingredientes para uma vida feliz🧿</h2>
-
-        <h5>não aberto a discussões</h5>
-        <ol type="I">
-          <li> pare de se importar com opniões alheias</li>
-          <ol type="i" <li> a vida n é feita para ser sobrevivida e sim vivida</li>
-           <li>repare em cada detalhe de cada momento, independente da ocasião</li>
-           <li>se ame</li>
-
-         </ol>
-          </li>
-          <li> seja feliz poha</li>
-          <li> e faça atividades físicas</li><br><br>
-
-        </ol>
-      </div>
-    </section>
-
-    <section>
-      <h1>💞Cadastro de Usuário💞</h1>
-
-      <img style="width: 100px; height: auto;" src="oie.jpg">
-    </section>
-
-    <section>
-      <form action="#" method="post" <label for="nome">Nome:</label><br>
+    <section class="formulario">
+      
+      <form action="#" method="post">
+        <h2>FALE<span class="sobre"> COMIGO:</span></h2>
+        <label>Interesse:</label><br>
+        <input type="radio" id="site" name="interesse">
+        <label for="site">sim</label><br>
+        <input type="radio" id="site" name="interesse">
+        <label for="site">não</label><br><br>
+        
+         <label for="servicos">Serviços Desejados:</label><br>
+         <select id="servicos" name="servicos">
+          <option value="portfólio">Portfólio</option>
+          <option value="blog">Blog</option>
+          <option value="institucional">Site Institucional</option>
+         </select><br><br>
+        
+        
+        <label for="nome">Nome:</label><br>
         <input type="text" id="nome" placeholder="digite seu nome" name="nome" require><br><br>
 
         <label for="senha">Senha:</label><br>
@@ -67,29 +101,14 @@
         <label for="idade">Idade</label><br>
         <input type="number" id="Idade" name="Idade" min="10" max="1000"><br><br>
 
-        <img style="width: 100px;height: auto;" src="marsha.jpg"><br>
-
-        <label>Interesse:</label><br>
-        <input type="radio" id="site" name="interesse">
-        <label for="site">sim</label><br>
-        <input type="radio" id="site" name="interesse">
-        <label for="site">não</label><br><br>
-
-
-        <label for="servicos">Serviços Desejados:</label><br>
-        <select id="servicos" name="servicos">
-          <option value="portfólio">Portfólio</option>
-          <option value="blog">Blog</option>
-          <option value="institucional">Site Institucional</option>
-        </select><br><br>
-
         <label for="mensagem">Mensagem</label><br>
         <textarea name="mensagem" id="mensagem" rows="5" cols="30"
           placeholder=" Digite sua mensagem aqui..."></textarea><br><br>
 
-
-
-        <button type="submit">Enviar</button>
+        <div class="enviar"><input type="submit"></input></div><br><br>
+        
+        <img class="marsha" src="marsha.jpg"><br>
+        
       </form>
     </section>
   </main>
