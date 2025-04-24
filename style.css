@@ -76,7 +76,7 @@ header>.interface {
 
 }
 .dois {
-    text-align: ;
+    text-align: right;
 }
 .sobre {
     color: #CF9C6F
@@ -89,7 +89,7 @@ header>.interface {
 
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     
     gap:20px;
 
@@ -102,12 +102,18 @@ header>.interface {
     box-shadow: 4px 4px 12px #442f1c;
     
 }
+main .life{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+
+}
 .life {
    
     display: flex;
-    justify-content:center;
+    justify-content:start;
     flex-direction: column;
-    align-items: center;
+
     
     gap:20px;
 
