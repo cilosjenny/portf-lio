@@ -76,7 +76,9 @@ header>.interface {
 
 }
 .dois {
-    text-align: right;
+    display: flex;
+    justify-content: start;
+    
 }
 .sobre {
     color: #CF9C6F
@@ -165,7 +167,8 @@ main .life{
     opacity: 0.92;
 }
 
-.marsha {
+.marsha {display: flex;
+    justify-content: start;
     width: 100px;
     height: auto;
     border-radius: 100px;
@@ -178,8 +181,8 @@ section.formulario {
 
 .formulario {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     height: auto;
     padding: auto;
     flex-direction: column;
