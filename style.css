@@ -5,7 +5,7 @@ body {
     text-shadow: 1px 2px 1px #936E4E;
     background-color: #7B4719;
     margin: 30px;
-    padding: 55px;
+    padding: 40px;
     max-width: 1280px;
     min-width: 320px;
 }
@@ -167,11 +167,13 @@ main .life{
     opacity: 0.92;
 }
 
-.marsha {display: flex;
+.marsha {
+    display: flex;
     justify-content: start;
     width: 100px;
     height: auto;
     border-radius: 100px;
+    
 }
 
 /*FORMULARIO*/
@@ -190,10 +192,10 @@ section.formulario {
 }
 
 form {
-    max-width: 200px;
-    margin: 0 auto;
+    max-width: 950px;
+    margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content:start;
     flex-direction: column;
 }
 
@@ -213,7 +215,7 @@ form textarea::placeholder {
     color: #ccc;
 }
 
-/*mudarba cor de dentro*/
+/*mudar a cor de dentro*/
 form input::placeholder {
     color: #ccc;
 }
